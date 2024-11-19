@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центрированная кнопка</title>
+  <style>
+    body {
+      background: #0a0a0e;
+      display: flex;
+      justify-content: center; /* Горизонтальное выравнивание */
+      align-items: center;     /* Вертикальное выравнивание */
+      height: 100vh;           /* Высота экрана */
+      margin: 0;               /* Убираем отступы */
+    }
+
+    .sliding-button {
+      text-decoration: none;
+      color: rgb(11, 6, 6); /* Белый текст для контраста */
+      display: inline-block;
+      position: relative;
+      padding: 15px 30px;
+      border: 1px solid;
+      border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+      border-image-slice: 1;
+      margin: 10px 20px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      overflow: hidden;
+      letter-spacing: 2px;
+      transition: .8s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .sliding-button:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 0;
+      width: 100%;
+      z-index: -1;
+      background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+      transition: height 0.8s cubic-bezier(.165, .84, .44, 1), bottom 0.8s cubic-bezier(.165, .84, .44, 1);
+    }
+
+    .sliding-button:hover {
+      background: rgba(255, 255, 255, 0);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+    }
+
+    .sliding-button:hover:before {
+      bottom: 0%;
+      top: auto;
+      height: 100%;
+    }
+
+    .sliding-button:focus {
+      outline: 2px solid #ff3000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Кнопка по центру страницы -->
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центрированная кнопка</title>
+    <style>
+      body {
+        background: #0a0a0e;
+        display: flex;
+        justify-content: center; /* Горизонтальное выравнивание */
+        align-items: center;     /* Вертикальное выравнивание */
+        height: 100vh;           /* Высота экрана */
+        margin: 0;               /* Убираем отступы */
+      }
+  
+      .sliding-button {
+        text-decoration: none;
+        color: white; /* Белый текст для контраста */
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+        border-image-slice: 1;
+        margin: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 2px;
+        transition: .8s cubic-bezier(.165, .84, .44, 1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      .sliding-button:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+        transition: height 0.8s cubic-bezier(.165, .84, .44, 1), bottom 0.8s cubic-bezier(.165, .84, .44, 1);
+      }
+  
+      .sliding-button:hover {
+        background: rgba(255, 255, 255, 0);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+      }
+  
+      .sliding-button:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+      }
+  
+      .sliding-button:focus {
+        outline: 2px solid #ff3000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Кнопка по центру страницы -->
+    <a href="file:///C:/Users/madul/OneDrive/Desktop/coding/%D1%83%D0%B6%D0%B0%D1%81.html" class="sliding-button" target="_blank">Перейти на сайт</a>
+  </body>
+
+  
+</body>
+</html>
